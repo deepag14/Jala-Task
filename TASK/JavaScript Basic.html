@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Javascript Task</h1>
+    
+
+    <button onclick="arrFunction()">Sort Fruits</button>
+    <p id="demo"></p>
+     <p id="demo1"></p>
+     <script>
+        //Single Line comment
+  
+        /*
+       Multi-Line Comment
+       */
+  
+        //2.array consisting of fruits names and when we click on a button sort it in descending order.
+        function arrFunction() {
+          var arr = ["Apple", "Orange", "JackFruit", "Mango"];
+          arr.sort();
+          arr.reverse();
+  
+          document.getElementById("demo").innerHTML = arr;
+        }
+  
+        //3.program with FOR/IN loop
+  
+        var student={Name:"Lakshmi",Age:60,Location:"Salem"};
+         for(let i in student){
+         document.getElementById("demo1").innerHTML+= i+ ":" +student[i] +"&nbsp&nbsp";
+        }
+
+        //4. Display these properties using 2 different ways of accessing.
+
+        var person={FirstName:"Deepa",LastName:"Gopal"};
+        document.write("FirstName:"+person.FirstName+"<br>");
+        document.write("LastName:"+person["LastName"]+"<br>");
+
+        //5. program with variable hoisting
+        result="Hoisting";
+        document.write(result+"<br>");
+        var result;
+
+       // 6.UseStrict Mode
+       "use strict"
+       x=24;
+       document.write(x);
+      </script>
+  </body>
+</html>
